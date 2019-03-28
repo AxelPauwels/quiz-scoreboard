@@ -1,0 +1,23 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../images/backgrounds/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.main-container {
+  height: 100vh;
+  padding-top: 25vh;
+}
+.main-container .person-wrapper .img-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+.main-container .person-wrapper .img-wrapper > img:hover {
+  -webkit-filter: sepia(50%);
+  filter: sepia(50%);
+}

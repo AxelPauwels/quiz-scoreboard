@@ -1,0 +1,96 @@
+/* MIXIN TO CREATE FINT-FACES */
+/* FONT FACES */
+/**/
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('../fonts/Roboto/Roboto-Thin.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Roboto/Roboto-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Roboto/Roboto-Thin.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/Roboto/Roboto-Thin.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'roboto-light';
+  src: url('../fonts/Roboto/Roboto-Light.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/Roboto/Roboto-Light.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('../fonts/Roboto/Roboto-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/Roboto/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'philosopher-regular';
+  src: url('../fonts/Philosopher/Philosopher-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Philosopher/Philosopher-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Philosopher/Philosopher-Regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/Philosopher/Philosopher-Regular.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/Philosopher/Philosopher-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'audiowide-regular';
+  src: url('../fonts/Audiowide/Regular/Audiowide-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/Audiowide/Regular/Audiowide-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/Audiowide/Regular/Audiowide-Regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/Audiowide/Regular/Audiowide-Regular.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/Audiowide/Regular/Audiowide-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+/* FONT VARIABLES */
+/* MIN-WIDTH *************************************************/
+/* MAX-WIDTH *************************************************/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: #333;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../images/backgrounds/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.main-container {
+  height: 100vh;
+  padding-top: 25vh;
+}
+.main-container .person-wrapper .img-wrapper > img {
+  width: 100%;
+  height: auto;
+  border: 8px inset #880B12;
+  -webkit-filter: sepia(50%) saturate(100%);
+  filter: sepia(50%) saturate(100%);
+}
+.main-container .person-wrapper .img-wrapper > img:hover {
+  -webkit-filter: sepia(50%) saturate(175%);
+  filter: sepia(50%) saturate(175%);
+}
+.main-container .person-wrapper .score-wrapper {
+  text-align: center;
+  font-family: audiowide-regular;
+  font-size: 30px;
+  font-weight: 700;
+  color: #59070c;
+}
+.main-container .person-wrapper .score-wrapper span {
+  width: 58px;
+  display: inline-block;
+  position: relative;
+  border-radius: 6px;
+  padding: 10px 15px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.34);
+}
+.main-container .person-wrapper .score-wrapper span:after {
+  box-shadow: inset 0 1px 0.5px rgba(25, 25, 25, 0.4);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  content: "";
+  width: 100%;
+  display: block;
+}
