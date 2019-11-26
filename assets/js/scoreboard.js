@@ -5,6 +5,14 @@ function ajax_getCorrectScore(personId,scoreWrapperElement) {
         data: {personId: personId},
         success: function (result) {
             scoreWrapperElement.html(result);
+            scoreWrapperElement.addClass('light-up');
+            
+            setTimeout(function(){
+                scoreWrapperElement.removeClass('light-up')
+            }
+            ,1750);
+
+
         },
         error: function (xhr, status, error) {
             console.log("-- ERROR IN AJAX --\n\n" + xhr.responseText);
